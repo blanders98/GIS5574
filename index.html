@@ -23,12 +23,8 @@
       var view = new MapView({
         container: "viewDiv",
         map: webmap,
-        zoom: 2, // Adjust zoom level as needed
+        zoom: 3, // Adjust zoom level for zooming out
         center: [-98.5795, 39.8283] // Center coordinates for the US
-      });
-
-      document.getElementById("clickButton").addEventListener("click", function() {
-        alert("Button clicked!");
       });
 
     });
@@ -37,9 +33,5 @@
 
 <body>
   <div id="viewDiv" style="width: 100%; height: 100vh;"></div>
-  <!-- A container for the button -->
-  <div id="buttonContainer" style="position: absolute; top: 10px; left: 10px;">
-    <button id="clickButton">Click</button>
-  </div>
 </body>
 </html>
